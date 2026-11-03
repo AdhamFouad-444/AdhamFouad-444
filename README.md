@@ -1,54 +1,86 @@
 <p align="center">
-  <img src="falak-banner.jpg" alt="FALAk: Opening pathways into space" width="100%">
+  <img src="assets/falak-banner.jpg" alt="FALAk Platforms: opening pathways into space" width="100%">
 </p>
 
 <h1 align="center">Adham Fouad</h1>
+
 <p align="center">
-  <b>Founder, FALAk Platforms</b> · AI product, business development and revenue operations<br>
-  Abu Dhabi, UAE / Leeds, UK
-</p>
-<p align="center">
-  <a href="https://falakplatforms.co.uk">falakplatforms.co.uk</a> ·
-  <a href="https://www.linkedin.com/in/adham-fouad-a0b24a237">LinkedIn</a> ·
-  <a href="mailto:adhamfouad123@gmail.com">adhamfouad123@gmail.com</a>
+  <b>Founder, FALAk Platforms.</b> I build AI products and the commercial engine that sells them.<br>
+  Abu Dhabi, UAE &nbsp;|&nbsp; Leeds, UK
 </p>
 
----
+<p align="center">
+  <a href="https://falakplatforms.co.uk"><b>falakplatforms.co.uk</b></a> &nbsp;|&nbsp;
+  <a href="https://www.linkedin.com/in/adham-fouad-a0b24a237"><b>LinkedIn</b></a> &nbsp;|&nbsp;
+  <a href="mailto:adhamfouad123@gmail.com"><b>adhamfouad123@gmail.com</b></a>
+</p>
 
-## About
+<br>
 
-I build the product and the commercial engine that sells it. I founded **FALAk**, a Space Academy for MENA,
-and built its adaptive AI spaceflight-training platform solo while studying International Business and
-Marketing at the University of Leeds. Alongside it I support **Z.ai** (GLM, HKEX: 2513) on Middle East
-market entry and run HubSpot RevOps for a US consultancy.
+<table>
+  <tr>
+    <td align="center"><h2>176</h2>pilot sessions</td>
+    <td align="center"><h2>0</h2>abandoned</td>
+    <td align="center"><h2>1,914</h2>server-verified<br>learning events</td>
+    <td align="center"><h2>81 to 94%</h2>answer accuracy<br>across the mission arc</td>
+    <td align="center"><h2>460+</h2>merged pull<br>requests, solo</td>
+  </tr>
+</table>
 
-## What I'm building: FALAk SimLab
+## FALAk SimLab
 
-A browser-based 3D spaceflight simulator where every learner gets a different mission. The source is
-private; the platform is live at [falakplatforms.co.uk](https://falakplatforms.co.uk).
+**A spaceflight academy that runs in a browser tab.** Learners pick a real mission, size the payload, configure
+the rocket and fly the launch. An adaptive engine watches every decision and reshapes the next one, so no two
+learners get the same mission. Built for space agencies, schools and training programmes across MENA, in
+Arabic, English and Spanish.
 
-| Area | What it does |
+<table>
+  <tr>
+    <td width="33%"><img src="assets/simlab-8-2-mission.jpg" alt="Lesson 8.2: choosing an Earth-observation payload"></td>
+    <td width="33%"><img src="assets/simlab-8-3-payload.jpg" alt="Lesson 8.3: payload requirements and the target orbit"></td>
+    <td width="33%"><img src="assets/simlab-8-8-ascent.jpg" alt="Lesson 8.8: the learner's own rocket on ascent"></td>
+  </tr>
+  <tr>
+    <td><b>1. Choose the mission.</b> Lesson 8.2: open each payload dossier and commit to an Earth-observation satellite.</td>
+    <td><b>2. Derive the requirements.</b> Lesson 8.3: work out power, orbit and downlink. Nobody hands you the numbers.</td>
+    <td><b>3. Fly it.</b> Lesson 8.8: the rocket you designed on day one launches on day two, and physics decides.</td>
+  </tr>
+</table>
+
+<sub>Real captures from SimLab, not mock-ups. The source code is private; demo access on request.</sub>
+
+### How every lesson adapts
+
+```mermaid
+flowchart LR
+  A[Calibrate] --> B[Learn] --> C[Simulate] --> D[Check] --> E[Debrief]
+  C -. every decision .-> M[(Learner model)]
+  D -. every answer .-> M
+  M -. reshapes the next mission .-> A
+  M --- S[S.O.C.R.A.T.E.S. tutor]
+```
+
+| | |
 |---|---|
-| **Adaptive engine** | Per-concept Bayesian Knowledge Tracing, forgetting curves and misconception tracking, with a reason ledger that explains every adaptation to learners and teachers |
-| **AI tutor** | S.O.C.R.A.T.E.S., an LLM Socratic tutor working with five AI flight-controller agents; earlier version fine-tuned from Llama 3.2 3B with LoRA |
-| **Curriculum** | 9 sections in Arabic, English and Spanish, first framework reviewed by the Head of Physics, University of Leeds |
-| **Pilot** | World Space Week pilot with Paradox (Egypt): 176 sessions, 0 abandoned, 1,914 server-verified learning events |
-| **Scale of build** | 460+ merged pull requests, 115,000+ lines of production TypeScript |
+| **Adaptive engine** | Bayesian Knowledge Tracing per concept, forgetting curves and misconception tracking. A reason ledger tells learners and teachers *why* each adaptation happened. |
+| **AI tutor** | S.O.C.R.A.T.E.S., a Socratic LLM tutor that works alongside five AI flight-controller agents and writes every prompt from the learner's own record. Its first version was a Llama 3.2 3B model I fine-tuned with LoRA. |
+| **Curriculum** | 9 sections in three languages. The first framework was reviewed by the Head of Physics at the University of Leeds. |
+| **For educators** | A console with cohort analytics and mission assignment. |
+| **Stack** | TypeScript, React, Three.js / react-three-fiber, Zustand, Vite, Supabase (PostgreSQL, Edge Functions), Groq and Ollama inference, Vitest, Playwright, Vercel |
 
-**Stack:** TypeScript, React, Three.js / react-three-fiber, Zustand, Vite, Supabase (PostgreSQL, Edge Functions),
-Groq and Ollama inference, Vitest, Playwright, Vercel
+## Where the work has taken me
 
-## Elsewhere
-
-- **Z.ai (GLM):** business development and market research for Middle East market entry
-- **Malin Advisory:** CRM and MarTech, HubSpot RevOps across three client engagements
-- **Hub.xyz (Y Combinator S26):** AI training-data sourcing, including a $50M Fortune 500 LLM-data engagement
+- **Egyptian Space Agency:** secured a live SimLab demonstration.
+- **Paradox (Egypt):** MOU partner for the World Space Week pilot. Paradox has taught 3,000+ learners across MENA.
+- **Z.ai (GLM, HKEX: 2513):** business development for Middle East market entry. I join delegation meetings with Moro Hub (Digital DEWA), PureCS (PureHealth) and Open Innovation AI.
+- **Malin Advisory:** HubSpot RevOps, working directly with the CEO across three client engagements, including a $1.68M dormant-deal pool.
+- **Hub.xyz (Y Combinator S26):** AI training-data sourcing, including a $50M Fortune 500 LLM-data engagement.
 
 ## Mentors
 
 - **Christopher Stott**, Founder and CEO, Lonestar Data Holdings
 - **Morgan Khan**, former SpaceX, Blue Origin and U.S. Air Force
 
----
+<br>
 
-<p align="center"><sub>Also a national-level go-kart driver for Egypt (FIA-sanctioned, UAE IAME Summer Series Vice Champion).</sub></p>
+<p align="center"><sub>Off the keyboard: national go-kart driver for Egypt (FIA-sanctioned), UAE IAME Summer Series Vice Champion.</sub></p>
