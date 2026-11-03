@@ -51,16 +51,10 @@ Arabic, English and Spanish.
 
 ### How every lesson adapts
 
-```mermaid
-flowchart LR
-  A[Calibrate] --> B[Learn] --> C[Simulate] --> D[Check] --> E[Debrief]
-  C -. every decision .-> M[(Learner model)]
-  D -. every answer .-> M
-  M -. reshapes the next mission .-> A
-  M --- S[S.O.C.R.A.T.E.S. tutor]
-```
+<p align="center"><b>Calibrate &rarr; Learn &rarr; Simulate &rarr; Check &rarr; Debrief</b><br>
+<sub>Every decision and answer updates the learner model, and the model reshapes the next mission.</sub></p>
 
-| | |
+| Layer | What it does |
 |---|---|
 | **Adaptive engine** | Bayesian Knowledge Tracing per concept, forgetting curves and misconception tracking. A reason ledger tells learners and teachers *why* each adaptation happened. |
 | **AI tutor** | S.O.C.R.A.T.E.S., a Socratic LLM tutor that works alongside five AI flight-controller agents and writes every prompt from the learner's own record. Its first version was a Llama 3.2 3B model I fine-tuned with LoRA. |
