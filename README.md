@@ -19,11 +19,14 @@
 
 <table>
   <tr>
-    <td align="center"><h2>176</h2>pilot sessions</td>
-    <td align="center"><h2>0</h2>abandoned</td>
-    <td align="center"><h2>1,914</h2>server-verified<br>learning events</td>
-    <td align="center"><h2>81 to 94%</h2>answer accuracy<br>across the mission arc</td>
-    <td align="center"><h2>460+</h2>merged pull<br>requests, solo</td>
+    <td align="center" width="33%"><h3>176</h3>pilot sessions</td>
+    <td align="center" width="33%"><h3>0</h3>abandoned</td>
+    <td align="center" width="33%"><h3>1,914</h3>verified learning events</td>
+  </tr>
+  <tr>
+    <td align="center"><h3>81 to 94%</h3>answer accuracy</td>
+    <td align="center"><h3>460+</h3>pull requests, solo</td>
+    <td align="center"><h3>3</h3>languages: AR, EN, ES</td>
   </tr>
 </table>
 
@@ -41,11 +44,15 @@ Arabic, English and Spanish.
     <td width="33%"><img src="assets/simlab-8-8-ascent.jpg" alt="Lesson 8.8: the learner's own rocket on ascent"></td>
   </tr>
   <tr>
-    <td><b>1. Choose the mission.</b> Lesson 8.2: open each payload dossier and commit to an Earth-observation satellite.</td>
-    <td><b>2. Derive the requirements.</b> Lesson 8.3: work out power, orbit and downlink. Nobody hands you the numbers.</td>
-    <td><b>3. Fly it.</b> Lesson 8.8: the rocket you designed on day one launches on day two, and physics decides.</td>
+    <td align="center"><b>1. Choose the mission</b></td>
+    <td align="center"><b>2. Derive the requirements</b></td>
+    <td align="center"><b>3. Fly it</b></td>
   </tr>
 </table>
+
+1. **Lesson 8.2:** open each payload dossier and commit to an Earth-observation satellite.
+2. **Lesson 8.3:** work out power, orbit and downlink. Nobody hands you the numbers.
+3. **Lesson 8.8:** the rocket you designed on day one launches on day two, and physics decides.
 
 <sub>Real captures from SimLab, not mock-ups. The source code is private; demo access on request.</sub>
 
